@@ -43,10 +43,10 @@
 
 .body_title_container_first {
   text-transform: uppercase;
-  white-space: nowrap !important;
-  width: 10px; 
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
+  white-space: nowrap ;
+  width: 300px; 
+  overflow: hidden ;
+  text-overflow: ellipsis ;
 }
 
 .body_title_container_second {
@@ -101,7 +101,7 @@
   }
 
   .body_hotel_div {
-    margin-left: 40%;
+    align-self: flex-end;
   }
 
 
