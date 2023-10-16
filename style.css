@@ -1,11 +1,8 @@
-
-
-
-.head{
+.head {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   height: 100%;
-  margin :auto;
+  margin: auto;
   display: flex;
   text-align: center;
   /* align-items: center; */
@@ -15,74 +12,99 @@
 
 }
 
-.head_title_img{
- width:100%;
- height: 100%;
+.head_title_img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.body_section_second{
+  padding: 0 5px;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-color: grey
+
+}
+.body_section_third{
+  padding: 0 5px;
+
 
 }
 
 
-
-.head_title_p{
+.head_title_p {
   font-size: 2rem;
   color: #192A7A;
 
 }
+/* .body_title_container{
+  overflow: hidden;
+} */
 
-.body_title_container_first{
+.body_title_container_first {
   text-transform: uppercase;
-}
-.body_title_container_second{
- color: #FFAE00;
- font-size: 1rem;
+  white-space: nowrap !important;
+  width: 10px; 
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
-.body_hotel_div{
+.body_title_container_second {
+  color: #FFAE00;
+  font-size: 1rem;
+}
+
+.body_hotel_div {
   margin-top: 3%;
   color: grey;
 }
 
-.body_text_container{
-  display:flex;
- justify-content: space-between;
+.body_text_container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.body_text_container_first{
- align-self:flex-start;
- justify-content:flex-start ;
- color:#109FD3
+.body_text_container_first {
+  align-self: flex-start;
+  justify-content: flex-start;
+  color: #109FD3
 }
 
-.body_text_container_second{
-  align-self:flex-end ;
-  justify-content:flex-end;
+.body_text_container_second {
+  align-self: flex-end;
+  justify-content: flex-end;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
   font-size: x-large;
-  color:#105C76
+  color: #105C76
+}
+
+@media only screen and (max-width: 600px) {
+  #clip {
+    position: absolute;
+    clip: rect(0, 180px, 180px, 0);
+    /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+    margin-left: 15%;
+  }
+
+  .head_title_img {
+    width: 50%;
+    height: 50%;
+    align-self: flex-start;
+    justify-content: flex-start;
 
   }
 
-  @media only screen and (max-width: 768px) {
-    #clip {
-      position: absolute;
-      clip: rect(0, 180px, 180px, 0);
-      /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
-      margin-left: 15%;
-    }
-    .head_title_img{
-      width:50%;
-      height: 50%;
-      align-self: flex-start;
-      justify-content: flex-start;
-     
-     } 
-     .body{
-      margin-right:40%;
-      text-align: right;
-     }
+  .body {
+    margin-right: 40%;
+    text-align: right;
+  }
 
-     .body_hotel_div{
-      margin-left: 40%;
-     }
+  .body_hotel_div {
+    margin-left: 40%;
+  }
+
+
+
+
 }
